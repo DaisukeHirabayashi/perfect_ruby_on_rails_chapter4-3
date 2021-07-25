@@ -8,6 +8,9 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
+document.addEventListener("turbolinks:load", function(){
+    console.log("turbolinks:load fire");
+})
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
